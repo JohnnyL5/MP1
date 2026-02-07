@@ -28,8 +28,9 @@ main{
 Size my profile picture to reasonable size
  */
 main img{
-    width: 30vh;
-    height: 40vh;
+    width: 40%;
+    height: 65%;
+    max-width: 40%;
 }
 
 main *{
@@ -100,9 +101,14 @@ For smallers screens
         min-height: 0;
     }
 
+    main p{
+        text-align: center;
+    }
+
     main img{
-        width: 200px;
-        height: 275px;
+        width: 80%;
+        height: 80%;
+        max-width: 80%;
     }
 
     nav{
@@ -171,7 +177,7 @@ Skills section
 
 #skillsmain{
     padding: 30px 0;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .skills{
@@ -220,16 +226,16 @@ Project Section
 }
 
 .buttons{
-    width: 55px;
-    height: 55px;
+    width: calc(50px + 1vw);
+    height: calc(45px + 1vw);
     font-size: calc(1.2px + 1.2vw);
     font-weight: bold;
     background-color: white;
 }
 
 .inputnumber{
-    width: 150px;
-    height: 50px;
+    width: calc(150px + 1vw);
+    height: calc(50px + 1vw);
     font-size: calc(1.2px + 1.5vw);
     border: 2px solid black;
 }
@@ -249,8 +255,8 @@ Project Section
 
 #calculatorcontainer{
     border: 2px solid black;
-    width: 400px;
-    height: 500px;
+    width: calc(400px + 1vw);
+    height: calc(500px + 1vw);
     margin: 30px auto;
     padding-top: 30px;
     background-color: lightgray;
