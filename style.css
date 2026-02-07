@@ -5,6 +5,10 @@
     margin: 0;
 }
 
+body{
+    height: 100%;
+}
+
 #pagewrap{
     background-color: #f5f6f8;
     width: 100%;
@@ -158,9 +162,6 @@ For smallers screens
 Edu section
  */
 
-#edumain{
-    margin: auto;
-}
 
 .edusections{
     padding: 30px 0;
