@@ -1,0 +1,271 @@
+/*
+    Followed Discussion 1 for some of these
+ */
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#pagewrap{
+    background-color: #f5f6f8;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+#navmain{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+main{
+    min-height: 100vh;
+    width: 70%;
+    text-align: center;
+    font-size: calc(1.7px + 1.5vw);
+}
+
+/*
+Size my profile picture to reasonable size
+ */
+main img{
+    width: 30vh;
+    height: 40vh;
+}
+
+main *{
+    margin: 2%;
+}
+
+nav{
+    width: 22%;
+    background-color: silver;
+}
+
+nav ul{
+    margin: 0;
+    list-style: none;
+    display: block;
+    text-align: center;
+    padding: 0;
+}
+
+nav li{
+    border: none;
+    width: 77%;
+    margin: 30px auto;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav a{
+    color: whitesmoke;
+    font-size: calc(2px + 2vw);
+}
+
+header{
+    background-color: lightgray;
+    padding: 20px;
+    text-align: left;
+}
+
+header h1{
+    margin: 0;
+}
+
+header p{
+    margin: 0;
+    font-size: calc(1.2px + 1.2vw);
+}
+
+footer{
+    text-align: center;
+    background-color: lightgray;
+}
+
+/*
+For smallers screens
+ */
+
+@media screen and (max-width: 750px){
+
+    #navmain{
+        display: block;
+    }
+
+    main{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: calc(5px + 2vw);
+    }
+
+    main img{
+        width: 65%;
+        height: 35%;
+    }
+
+    nav{
+        width: 100%;
+        text-align: center;
+    }
+
+    nav li{
+        display: inline;
+        margin: 5px;
+        width: auto;
+    }
+
+    nav a{
+        display: inline-block;
+        padding: 5px 5px;
+    }
+
+    header{
+        text-align: center;
+    }
+
+    header p{
+        font-size: calc(2px + 2vw);
+    }
+
+    footer{
+        text-align: center;
+    }
+
+    .buttons{
+        padding:0;
+        text-align: center;
+        font-size: calc(5px + 5vw);
+    }
+
+}
+
+
+
+/*
+Edu section
+ */
+
+#edumain{
+    margin: auto;
+}
+
+.edusections{
+    padding: 30px 0;
+    border-bottom: 3px solid black; /*Creates line under my section wrapped in div*/
+}
+
+.csclasses{
+    font-size: calc(4px + 1.5vw);
+}
+
+#econclasses{
+    font-size: calc(4px + 1.5vw);
+}
+
+
+/*
+Skills section
+ */
+
+#skillsmain{
+    padding: 30px 0;
+    margin: auto;
+}
+
+.skills{
+    font-size: calc(4px + 1.5vw);
+}
+
+/*
+Experience Section
+ */
+
+.expbio{
+    font-size: calc(4px + 1.5vw);
+}
+
+.expsections{
+    padding: 30px 0;
+    border-bottom: 3px solid black; /*Creates line under my section wrapped in div*/
+}
+
+
+/*
+Extracurricular Section
+ */
+
+.extrasections{
+    padding: 30px 0;
+    border-bottom: 3px solid black; /*Creates line under my section wrapped in div*/
+}
+
+.extrabio{
+    font-size: calc(4px + 1.5vw);
+}
+
+/*
+Project Section
+*/
+
+#outputlabel{
+    display: inline;
+    text-align: center;
+}
+
+#output{
+    display: inline;
+    text-align: center;
+}
+
+.buttons{
+    width: 55px;
+    height: 55px;
+    font-size: calc(1.2px + 1.2vw);
+    font-weight: bold;
+    background-color: white;
+}
+
+.inputnumber{
+    width: 150px;
+    height: 50px;
+    font-size: calc(1.2px + 1.5vw);
+    border: 2px solid black;
+}
+
+#buttonsection1{
+    display: block;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+#buttonsection2{
+    display: block;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#calculatorcontainer{
+    border: 2px solid black;
+    width: 400px;
+    height: 500px;
+    margin: 0 auto;
+    padding-top: 30px;
+    background-color: lightgray;
+}
+
+#projectbio{
+    margin: 30px auto;
+}
+
+.inputlabel{
+    font-size: calc(1.2px + 1.2vw);
+    text-align: center;
+}
+
+#inputrow{
+    display: flex;
+    justify-content: center;
+}
