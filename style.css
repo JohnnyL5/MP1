@@ -3,23 +3,27 @@
  */
 *{
     margin: 0;
-    box-sizing: border-box;
 }
 
 #pagewrap{
     background-color: #f5f6f8;
-    width: 80vw;
+    width: 100%;
     margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 #navmain{
     width: 100%;
     display: flex;
     flex-direction: row;
+    min-height: 100vh;
 }
 
 main{
-    width: 70%;
+    width: 100%;
+    height: 100%;
     text-align: center;
     font-size: calc(1.7px + 1.5vw);
 }
@@ -28,8 +32,8 @@ main{
 Size my profile picture to reasonable size
  */
 main img{
-    width: 40%;
-    height: 65%;
+    width: 25%;
+    height: 15%;
     max-width: 40%;
 }
 
@@ -48,14 +52,16 @@ nav ul{
     display: block;
     text-align: center;
     padding: 0;
+    width: 100%;
+    height: 100%;
 }
 
 nav li{
     border: none;
-    width: 77%;
     margin: 30px auto;
     padding: 15px 0;
     text-align: center;
+    width: 100%;
 }
 
 nav a{
@@ -81,6 +87,7 @@ header p{
 footer{
     text-align: center;
     background-color: lightgray;
+    width: 100%;
 }
 
 /*
@@ -90,15 +97,13 @@ For smallers screens
 @media screen and (max-width: 750px){
 
     #navmain{
-        display: block;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
     }
 
     main{
         width: 100%;
-        margin: 0 auto;
-        text-align: center;
-        font-size: calc(5px + 2vw);
-        min-height: 0;
     }
 
     main p{
